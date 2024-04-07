@@ -1,0 +1,10 @@
+---
+layout: default
+title: Your Customizable Page
+blocks: []
+---
+<div>
+  {% for block in page.blocks %}
+    {% include blocks/{{ block.type }}.html with block %}
+  {% endfor %}
+</div>

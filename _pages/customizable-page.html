@@ -1,0 +1,9 @@
+---
+layout: default
+title: A Customizable Page
+blocks: []
+---
+
+{% for block in page.blocks %}
+  {% include blocks/{{ block.name }}.html title=block.title subtitle=block.subtitle content=block.content %}
+{% endfor %}

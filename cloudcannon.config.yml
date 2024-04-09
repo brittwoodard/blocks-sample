@@ -44,5 +44,11 @@ _structures:
         title: 
         subtitle: 
         content: 
+     - label: Example Block
+       value: 
+        _id: example_block
+        title: 
+        subtitle: 
+        content: 
 data_config: {}
 timezone: Etc/UTC

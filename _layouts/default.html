@@ -11,9 +11,12 @@
 
     <header> This is your header </header>
 
-    {{content}}
+    {% for block in page.blocks %}
+    <!-- {{block._id}} -->
+    {% include /blocks/{{block._id}}.html %}
+    {% endfor %}
 
-	<footer> This is your footer </footer>
+    <footer> This is your footer </footer>
 
 </body>
 
